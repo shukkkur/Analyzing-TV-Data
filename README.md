@@ -59,5 +59,18 @@ plt.hist(super_bowls.combined_pts)
 
 ![dist2](https://github.com/shukkkur/Analyzing-TV-Data/blob/1be2b5e20314d88083ca3d35e73336c5908899d7/dist2.png)
 
+<br>
+### Do blowouts translate to lost viewers?
+<p>The vast majority of Super Bowls are close games. Makes sense. However, watching one team crushing the other would be boring, in my opinion.</p>
+<br>
+<p>Let's combine our game data and TV to see if this is a universal phenomenon. _Do large point differences translate to lost viewers?_ </p>
 
+```python
+games_tv = pd.merge(tv[tv['super_bowl'] > 1], super_bowls, on='super_bowl')
+sns.regplot(x=games_tv.difference_pts, y=games_tv.share_household, data=games_tv)
+```
+<p align="center">
+![dist3](https://github.com/shukkkur/Analyzing-TV-Data/blob/6750876730b8c75db7727a3848977332327f9fe1/dist3.png)
+</p>
 
+<p>The downward sloping regression line and the 95% confidence interval for that regression suggest that bailing on the game if it is a blowout is common.</p>
