@@ -66,8 +66,7 @@ plt.hist(super_bowls.combined_pts)
 
 <br>
 <h3>Do blowouts translate to lost viewers?</h3>
-<p>The vast majority of Super Bowls are close games. Makes sense. However, watching one team crushing the other would be boring, in my opinion.</p>
-<p>Let's combine our game data and TV to see if this is a universal phenomenon.</p> <b>Do large point differences translate to lost viewers?</b>
+<p>The vast majority of Super Bowls are close games. Makes sense. However, watching one team crushing the other would be boring, in my opinion. Do large point differences translate to lost viewers?</p>
 
 ```python
 games_tv = pd.merge(tv[tv['super_bowl'] > 1], super_bowls, on='super_bowl')
