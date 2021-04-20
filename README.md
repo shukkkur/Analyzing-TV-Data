@@ -78,7 +78,7 @@ sns.regplot(x=games_tv.difference_pts, y=games_tv.share_household, data=games_tv
 
 
 <p>The downward sloping regression line and the 95% confidence interval for that regression suggest that bailing on the game if it is a blowout is common.</p>
-<br>
+
 <h3>Viewership and the ad industry over time</h3>
 
 <p>Regardless of the score though, I bet most people stick it out for the halftime show, which is good news for the TV networks and advertisers. A 30-second spot costs a pretty $5 million now, but has it always been that way? And how have number of viewers and household ratings trended alongside ad cost? We can find out using line plots that share a "Super Bowl" x-axis.</p>
@@ -101,7 +101,7 @@ plt.show()
 <p align="center">
   <img src="https://github.com/shukkkur/Analyzing-TV-Data/blob/9930a274f110ee50afba96d9acf0391121097626/dist4.png"/>
 </p>
-<br>
+
 <h3>Who has the most halftime show appearances?</h3>
 
 <p>Let's see all of the musicians that have done more than one halftime show, including their performance counts.</p>
@@ -131,7 +131,6 @@ display(halftime_appearances[halftime_appearances.super_bowl > 1])
 |  57 | Nelly                                             | 2          |
 |  44 | Los Angeles Unified School District All City H... | 2          |
 
-<br>
 <h3>Who performed the most songs in a halftime show?</h3>
 
 <p>Let's filter out marching bands by filtering out musicians with the word "Marching" in them and the word "Spirit" (a common naming convention for marching bands is "Spirit of something").</p>
