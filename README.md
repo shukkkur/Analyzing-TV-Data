@@ -46,4 +46,18 @@ halftime_musicians = pd.read_csv('halftime_musicians.csv')
 
 <p>Let's start by looking at combined points for each Super Bowl by visualizing the distribution. Let's also pinpoint the Super Bowls with the highest and lowest scores.</p>
 
+```python
+plt.hist(super_bowls.combined_pts)
+```
 ![dist](https://github.com/shukkkur/Analyzing-TV-Data/blob/8ef1b3d7df8d235a766a31c35184a4df89299da0/1.png)
+
+<p>Most combined scores are around 40-50 points, with the extremes being roughly equal distance away in opposite directions. Going up to the highest combined scores at 74 and 75, we find two games featuring dominant quarterback performances.</p>
+<br>
+<p>Let's take a look at point difference now.</p>
+
+### Point difference distribution
+
+![dist2](https://github.com/shukkkur/Analyzing-TV-Data/blob/1be2b5e20314d88083ca3d35e73336c5908899d7/dist2.png)
+
+
+
