@@ -67,8 +67,7 @@ plt.hist(super_bowls.combined_pts)
 <br>
 <h3>Do blowouts translate to lost viewers?</h3>
 <p>The vast majority of Super Bowls are close games. Makes sense. However, watching one team crushing the other would be boring, in my opinion.</p>
-<br>
-<p>Let's combine our game data and TV to see if this is a universal phenomenon. _Do large point differences translate to lost viewers?_ </p>
+<p>Let's combine our game data and TV to see if this is a universal phenomenon.</p> **Do large point differences translate to lost viewers?** 
 
 ```python
 games_tv = pd.merge(tv[tv['super_bowl'] > 1], super_bowls, on='super_bowl')
@@ -84,7 +83,9 @@ sns.regplot(x=games_tv.difference_pts, y=games_tv.share_household, data=games_tv
 <h3>Viewership and the ad industry over time</h3>
 
 <p>Regardless of the score though, I bet most people stick it out for the halftime show, which is good news for the TV networks and advertisers. A 30-second spot costs a pretty $5 million now, but has it always been that way? And how have number of viewers and household ratings trended alongside ad cost? We can find out using line plots that share a "Super Bowl" x-axis.</p>
+
 ```python
+
 plt.subplot(3, 1, 1)
 plt.plot(tv.super_bowl,tv.avg_us_viewers, color='#648FFF')
 
@@ -131,10 +132,10 @@ display(halftime_appearances[halftime_appearances.super_bowl > 1])
 |  57 | Nelly                                             | 2          |
 |  44 | Los Angeles Unified School District All City H... | 2          |
 
-
+<br>
 <h3>Who performed the most songs in a halftime show?</h3>
 
-<p>Let's filter out marching bands by filtering out musicians with the word "Marching" in them and the word "Spirit" (a common naming convention for marching bands is "Spirit of [something]").</p>
+<p>Let's filter out marching bands by filtering out musicians with the word "Marching" in them and the word "Spirit" (a common naming convention for marching bands is "Spirit of something").</p>
 
 ```python
 # Filter out most marching bands
@@ -164,4 +165,4 @@ display(no_bands.head(15))
 | 64 | 32         | The Temptations     | 4.0       |
 | 36 | 39         | Paul McCartney      | 4.0       |  
 
-So most non-band musicians do 1-3 songs per halftime show.
+<p>So most non-band musicians do 1-3 songs per halftime show.</p>
