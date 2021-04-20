@@ -42,7 +42,7 @@ halftime_musicians = pd.read_csv('halftime_musicians.csv')
 | 1 | 52         | University of Minnesota Marching Band | 1.0       |
 | 2 | 51         | Lady Gaga                             | 7.0       |
 
-<br>
+<hr>
 
 <p>Let's start by looking at combined points for each Super Bowl by visualizing the distribution. Let's also pinpoint the Super Bowls with the highest and lowest scores.</p>
-![image](https://user-images.githubusercontent.com/78250180/115431286-f2bf1c80-a226-11eb-90ac-9b27e809a630.png)
+![img1](https://github.com/shukkkur/Analyzing-TV-Data/blob/b00288d4ca9a7a8945ae052f1f5870b7356e2075/1.png)
