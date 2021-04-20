@@ -49,7 +49,10 @@ halftime_musicians = pd.read_csv('halftime_musicians.csv')
 ```python
 plt.hist(super_bowls.combined_pts)
 ```
-![dist](https://github.com/shukkkur/Analyzing-TV-Data/blob/8ef1b3d7df8d235a766a31c35184a4df89299da0/1.png)
+<p align="center">
+  <img src="https://github.com/shukkkur/Analyzing-TV-Data/blob/8ef1b3d7df8d235a766a31c35184a4df89299da0/1.png"/>
+</p>
+
 
 <p>Most combined scores are around 40-50 points, with the extremes being roughly equal distance away in opposite directions. Going up to the highest combined scores at 74 and 75, we find two games featuring dominant quarterback performances.</p>
 <br>
@@ -57,7 +60,9 @@ plt.hist(super_bowls.combined_pts)
 
 ### Point difference distribution
 
-![dist2](https://github.com/shukkkur/Analyzing-TV-Data/blob/1be2b5e20314d88083ca3d35e73336c5908899d7/dist2.png)
+<p align="center">
+  <img src="https://github.com/shukkkur/Analyzing-TV-Data/blob/1be2b5e20314d88083ca3d35e73336c5908899d7/dist2.png"/>
+</p>
 
 <br>
 ### Do blowouts translate to lost viewers?
@@ -70,7 +75,8 @@ games_tv = pd.merge(tv[tv['super_bowl'] > 1], super_bowls, on='super_bowl')
 sns.regplot(x=games_tv.difference_pts, y=games_tv.share_household, data=games_tv)
 ```
 <p align="center">
-![dist3](https://github.com/shukkkur/Analyzing-TV-Data/blob/6750876730b8c75db7727a3848977332327f9fe1/dist3.png)
+  <img src="https://github.com/shukkkur/Analyzing-TV-Data/blob/6750876730b8c75db7727a3848977332327f9fe1/dist3.png"/>
 </p>
+
 
 <p>The downward sloping regression line and the 95% confidence interval for that regression suggest that bailing on the game if it is a blowout is common.</p>
