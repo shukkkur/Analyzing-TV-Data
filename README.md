@@ -45,4 +45,5 @@ halftime_musicians = pd.read_csv('halftime_musicians.csv')
 <hr>
 
 <p>Let's start by looking at combined points for each Super Bowl by visualizing the distribution. Let's also pinpoint the Super Bowls with the highest and lowest scores.</p>
-![img1](https://github.com/shukkkur/Analyzing-TV-Data/blob/b00288d4ca9a7a8945ae052f1f5870b7356e2075/1.png)
+
+![dist](https://github.com/shukkkur/Analyzing-TV-Data/blob/8ef1b3d7df8d235a766a31c35184a4df89299da0/1.png)
