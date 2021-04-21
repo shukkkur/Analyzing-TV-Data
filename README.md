@@ -50,7 +50,7 @@ halftime_musicians = pd.read_csv('halftime_musicians.csv')
 plt.hist(super_bowls.combined_pts)
 ```
 <p align="center">
-  <img src="https://github.com/shukkkur/Analyzing-TV-Data/blob/8ef1b3d7df8d235a766a31c35184a4df89299da0/1.png"/>
+  <img src="https://github.com/shukkkur/Analyzing-TV-Data/blob/fc4a9e703f2055b18a83042c8a01e1d80005e9a7/pics/1.png"/>
 </p>
 
 
@@ -61,7 +61,7 @@ plt.hist(super_bowls.combined_pts)
 <p>Let's take a look at point difference now.</p>
 
 <p align="center">
-  <img src="https://github.com/shukkkur/Analyzing-TV-Data/blob/1be2b5e20314d88083ca3d35e73336c5908899d7/dist2.png"/>
+  <img src="https://github.com/shukkkur/Analyzing-TV-Data/blob/fc4a9e703f2055b18a83042c8a01e1d80005e9a7/pics/dist2.png"/>
 </p>
 
 <br>
@@ -73,7 +73,7 @@ games_tv = pd.merge(tv[tv['super_bowl'] > 1], super_bowls, on='super_bowl')
 sns.regplot(x=games_tv.difference_pts, y=games_tv.share_household, data=games_tv)
 ```
 <p align="center">
-  <img src="https://github.com/shukkkur/Analyzing-TV-Data/blob/6750876730b8c75db7727a3848977332327f9fe1/dist3.png"/>
+  <img src="https://github.com/shukkkur/Analyzing-TV-Data/blob/fc4a9e703f2055b18a83042c8a01e1d80005e9a7/pics/dist3.png"/>
 </p>
 
 
@@ -99,7 +99,7 @@ plt.show()
 ```
 
 <p align="center">
-  <img src="https://github.com/shukkkur/Analyzing-TV-Data/blob/9930a274f110ee50afba96d9acf0391121097626/dist4.png"/>
+  <img src="https://github.com/shukkkur/Analyzing-TV-Data/blob/fc4a9e703f2055b18a83042c8a01e1d80005e9a7/pics/dist4.png"/>
 </p>
 
 <h3>Who has the most halftime show appearances?</h3>
